@@ -17,6 +17,8 @@ The first test board（DarkPill V1.0）welded by hand and it works great!
 - USB C Connector  supports positive and negative insertion.
 - Use the [USBLC6-2](https://www.st.com/en/protection-devices/usblc6-2.html) ic to ESD protection, Don't need to solder it  will not affect the serial port work.
 
+## PCB
+
 ![BRD](image/BRD.png)
 
 ## SCH
@@ -58,13 +60,13 @@ The first test board（DarkPill V1.0）welded by hand and it works great!
 
 If the U1 chip is STM32F103 and Programming [STM32duino-bootloader](https://github.com/rogerclarkmelbourne/STM32duino-bootloader) with [Arduino_STM32](https://github.com/rogerclarkmelbourne/Arduino_STM32) for DFU upgrade, the frequency of 3225 crystal oscillator must be 8, 12 or 16MHz, because these frequencies can be divisible by the [USB clock of 48Mhz](https://www.sigidwiki.com/wiki/High_Speed_USB_Noise). In order to save a lot of trouble, it is best to use an 8MHz crystal oscillator, but the 3225 package may not be easy to reach, such as [KDS DSX321G](http://ftp.kds.info/products/DSX321G_en.pdf).
 
-If you use 12 or 16MHz, you need to build an arm tool chain and use make to recompile STM32duino-bootloader. [See here for details](). Fortunately, I have compiled 12MHz and 16MHz STM32duino-bootloader, you can use it directly. However, it is not enough to just burn it, you also need to change the PLL multiplier value in boards_setup.cpp in the ArduinoSTM32 folder. [See here for details]().
+If you use 12 or 16MHz, you need to build an arm tool chain and use make to recompile STM32duino-bootloader. Fortunately, I have compiled 12MHz and 16MHz STM32duino-bootloader, you can use it directly. However, it is not enough to just burn it, you also need to change the PLL multiplier value in boards_setup.cpp in the ArduinoSTM32 folder. [See here for details](https://oldgerman.github.io/201e530f/).
 
 ### ZH
 
 若U1芯片为STM32F103，并且烧录[STM32duino-bootloader](https://github.com/rogerclarkmelbourne/STM32duino-bootloader)配合[Arduino_STM32](https://github.com/rogerclarkmelbourne/Arduino_STM32)以进行DFU升级，那么3225晶振的频率必须为8、12或16MHz，因为这些频率可以被[USB时钟48Mhz](https://www.cnblogs.com/cherishui/p/4204280.html)整除。为了省去很多麻烦，最好使用8MHz的晶振，但是3225封装的可能不太好买到，例如[KDS DSX321G](http://ftp.kds.info/products/DSX321G_en.pdf)。
 
-若使用12或16MHz，需要搭建arm工具链，使用make重新编译STM32duino-bootloader，[步骤详见此处]()，幸运的是，我已经编译好了12MHz和16MHz的STM32duino-bootloader，你可以直接使用。但是，仅仅烧录它是不够的，还需要改动ArduinoSTM32文件夹里的boards_setup.cpp中的PLL倍频的值，[步骤详见此处]()。
+若使用12或16MHz，需要搭建arm工具链，使用make重新编译STM32duino-bootloader，幸运的是，我已经编译好了12MHz和16MHz的STM32duino-bootloader，你可以直接使用。但是，仅仅烧录它是不够的，还需要改动ArduinoSTM32文件夹里的boards_setup.cpp中的PLL倍频的值，[步骤详见此处](https://oldgerman.github.io/201e530f/)。
 
 ## Test(V1.0)
 
