@@ -1,6 +1,6 @@
 # DarkPill
 
-A development kit Improved from [BluePill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill)
+A STM32 development board Improved from [BluePill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill)
 
 The first test board（DarkPill V1.0）welded by hand and it works great!
 
