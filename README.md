@@ -1,20 +1,18 @@
-# DarkPill V1.1
+# DarkPill
 
-A development kit Improved from BluePill
+A development kit Improved from [BluePill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill)
 
 The first test board（DarkPill V1.0）welded by hand and it works great!
 
-<table>
-    <td><image src = "image/DarkPill-V1.0(2).png"></td>
-    <td><image src = "image/DarkPill-V1.0(1).png"></td>
-</table>
+![DarkPill-V1.0(0).png](image/DarkPill-V1.0(0).png)
 
 ## Features
 
 - Support LQFP48 packages such as STM32F030, F072，F103，F303，G474...
-- Pin to pin with BluePill development kits.(Except B2)
+- Pin to pin with BluePill development kits(Except B2).
 - Double-sided PCB layout, the board thickness is 1.0mm, size 59.7mm x17.8mm, both pads and vias have teardrops...
-- Discrete components are packaged in 0603, which is easy to solder by hand
+- Center symmetrical design.
+- Discrete components are packaged in 0603, which is easy to solder by hand.
 - There are four M2 holes around the PCB that are easy to fix.
 - USB C Connector  supports positive and negative insertion.
 - Use the [USBLC6-2](https://www.st.com/en/protection-devices/usblc6-2.html) ic to ESD protection, Don't need to solder it  will not affect the serial port work.
@@ -68,7 +66,7 @@ If you use 12 or 16MHz, you need to build an arm tool chain and use make to reco
 
 若使用12或16MHz，需要搭建arm工具链，使用make重新编译STM32duino-bootloader，[步骤详见此处]()，幸运的是，我已经编译好了12MHz和16MHz的STM32duino-bootloader，你可以直接使用。但是，仅仅烧录它是不够的，还需要改动ArduinoSTM32文件夹里的boards_setup.cpp中的PLL倍频的值，[步骤详见此处]()。
 
-## Test
+## Test(V1.0)
 
 ### Programming methods
 
