@@ -19,8 +19,6 @@ The first test board（DarkPill V1.0）welded by hand and it works great!
 - USB C Connector  supports positive and negative insertion.
 - Use the [USBLC6-2](https://www.st.com/en/protection-devices/usblc6-2.html) ic to ESD protection, Don't need to solder it  will not affect the serial port work.
 
-## PCB View
-
 ![BRD](image/BRD.png)
 
 ## SCH
@@ -95,7 +93,7 @@ If you use 12 or 16MHz, you need to build an arm tool chain and use make to reco
     <td><image src = "image/Programming-DFU(2).png"></td>
 </table>
 
-<span style="color:#FF0000;">Notice:</span>
+#### <span style="color:#FF0000;">Notice:</span>
 
 Both using Serial or ST-LINK programming in this mode will disable the STM32duino-bootloader DFU function, and the symptoms are: the LED of PC13 cannot flash after Reset is pressed.:flushed:
 
