@@ -88,7 +88,7 @@ If you use 12 or 16MHz, you need to build an arm tool chain and use make to reco
 
 #### 3. DFU 
 
-| Connection                                    | 1.Arduino IDE(with STM32duino-bootloader)           | DfuSeDemo                                                    |
+| Connection                                    | 1.Arduino IDE(with STM32duino-bootloader)           | 2.DfuSeDemo                                                  |
 | --------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
 | ![Programming-DFU](image/Programming-DFU.png) | ![Programming-DFU(2)](image/Programming-DFU(2).png) | [stm32-dfu-bootloader](https://github.com/davidgfnet/stm32-dfu-bootloader)<b>Not yet successful. |
 
