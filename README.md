@@ -74,30 +74,29 @@ If you use 12 or 16MHz, you need to build an arm tool chain and use make to reco
 
 #### 1. Serial
 
-<table>
-    <td width = 53%><image src = "image/Programming-Serial.png"></td>
-    <td><image src = "image/Programming-Serial(2).png"></td>
-</table>
+| Connection                                          | 1.Arduino IDE                                             | 2.FlyMCU                                                  |
+| --------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
+| ![Programming-Serial](image/Programming-Serial.png) | ![Programming-Serial(2)](image/Programming-Serial(2).png) | ![Programming-Serial(3)](image/Programming-Serial(3).png) |
 
-#### 2. ST-LINK
 
-<table>
-    <td width = 53%><image src = "image/Programming-SWD.png"></td>
-    <td><image src = "image/Programming-SWD(2).png"></td>
-</table>
 
-#### 3. DFU (with STM32duino-bootloader)
+#### 2. SWD(ST-LINK)
 
-<table>
-    <td width = 53%><image src = "image/Programming-DFU.png"></td>
-    <td><image src = "image/Programming-DFU(2).png"></td>
-</table>
+| Connection                                    | 1.Arduino IDE                                       | 2.STM32 ST-LINK Utility                             |
+| --------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
+| ![Programming-SWD](image/Programming-SWD.png) | ![Programming-SWD(2)](image/Programming-SWD(2).png) | ![Programming-SWD(3)](image/Programming-SWD(3).png) |
+
+#### 3. DFU 
+
+| Connection                                    | 1.Arduino IDE(with STM32duino-bootloader)           | DfuSeDemo                                                    |
+| --------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
+| ![Programming-DFU](image/Programming-DFU.png) | ![Programming-DFU(2)](image/Programming-DFU(2).png) | [stm32-dfu-bootloader](https://github.com/davidgfnet/stm32-dfu-bootloader)<b>Not yet successful. |
 
 #### <span style="color:#FF0000;">Notice:</span>
 
-Both using Serial or ST-LINK programming in this mode will disable the STM32duino-bootloader DFU function, and the symptoms are: the LED of PC13 cannot flash after Reset is pressed.:flushed:
+Both using Serial or ST-LINK programming with STM32duino-bootloader will disable the STM32duino-bootloader DFU function, and the symptoms are: the LED of PC13 cannot flash after Reset is pressed.:flushed:
 
-在此模式下使用串行或ST-LINK编程都将禁用STM32duino-bootloader DFU功能，其症状为：按下Reset后PC13的LED无法闪烁.:flushed:
+在STM32duino-bootloader下使用串行或ST-LINK编程都将禁用STM32duino-bootloader DFU功能，其症状为：按下Reset后PC13的LED无法闪烁.:flushed:
 
 ### RTC
 
