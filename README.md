@@ -2,9 +2,13 @@
 
 A STM32 development board Improved from [BluePill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill)
 
-The first test board（DarkPill V1.0）welded by hand and it works great!
+![DarkPill-V1.0(0).png](image/DarkPill-V1.1(1).png)
 
-![DarkPill-V1.0(0).png](image/DarkPill-V1.0(0).png)
+![DarkPill-V1.0(0).png](image/DarkPill-V1.1(2).png)
+
+### Notice：
+
+Pin B1 is repeated twice (BOOT1 and PB1), this problem has been modified to B2 in the shared PCB file :)
 
 ## Features
 
@@ -19,7 +23,7 @@ The first test board（DarkPill V1.0）welded by hand and it works great!
 
 ## PCB
 
-![BRD](image/BRD.png)
+![BRD](image/size.png)
 
 ## SCH
 
@@ -68,7 +72,7 @@ If you use 12 or 16MHz, you need to build an arm tool chain and use make to reco
 
 若使用12或16MHz，需要搭建arm工具链，使用make重新编译STM32duino-bootloader，幸运的是，我已经编译好了12MHz和16MHz的STM32duino-bootloader，你可以直接使用。但是，仅仅烧录它是不够的，还需要改动ArduinoSTM32文件夹里的boards_setup.cpp中的PLL倍频的值，[步骤详见此处](https://oldgerman.github.io/201e530f/)。
 
-## Test(V1.0)
+## Test
 
 ### Programming methods
 
