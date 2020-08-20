@@ -92,6 +92,8 @@ If you use 12 or 16MHz, you need to build an arm tool chain and use make to reco
 
 #### 3. DFU 
 
+#### STM32F103
+
 | Connection                                    | 1.Arduino IDE(with STM32duino-bootloader)           | 2.DfuSeDemo                                                  |
 | --------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
 | ![Programming-DFU](image/Programming-DFU.png) | ![Programming-DFU(2)](image/Programming-DFU(2).png) | [stm32-dfu-bootloader](https://github.com/davidgfnet/stm32-dfu-bootloader)<b>Not yet successful. |
@@ -101,6 +103,12 @@ If you use 12 or 16MHz, you need to build an arm tool chain and use make to reco
 Both using Serial or ST-LINK programming with STM32duino-bootloader will disable the STM32duino-bootloader DFU function, and the symptoms are: the LED of PC13 cannot flash after Reset is pressed.:flushed:
 
 在STM32duino-bootloader下使用串行或ST-LINK编程都将禁用STM32duino-bootloader DFU功能，其症状为：按下Reset后PC13的LED无法闪烁.:flushed:
+
+#### STM32F072
+
+| U1                                    | DFU                                   | DfuSeDemo                             |
+| ------------------------------------- | ------------------------------------- | ------------------------------------- |
+| ![F072_DFU(1)](image/F072_DFU(1).png) | ![F072_DFU(3)](image/F072_DFU(3).png) | ![F072_DFU(2)](image/F072_DFU(2).png) |
 
 ### RTC
 
