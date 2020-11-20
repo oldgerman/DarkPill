@@ -31,6 +31,8 @@ Pin B1 is repeated twice (BOOT1 and PB1), this problem has been modified to B2 i
 
 ## B.O.M
 
+Please see bom/ibom.html or following:
+
 | Num  | Qty  | Value          | Device                   | Package        | Parts                                                        |
 | ---- | ---- | -------------- | ------------------------ | -------------- | ------------------------------------------------------------ |
 | 1    | 1    | STM32F103CBT6  | STM32F303CBT6            | TQFP48         | U1                                                           |
